@@ -11,7 +11,7 @@ function App() {
   return (
     <>
         <Routes>
-          <Route path='/Paradise-Nursery-Shopping-Application' element={<Home/>} />
+          <Route path='/' element={<Home/>} />
           <Route path="/product" element={<Product_listing_page/>}/>
           <Route path ='/product/cart' element={<Shopping_cart/>}/>
           <Route path='/product/OrderConfirmation' element={<OrderConfirmation/>} />
