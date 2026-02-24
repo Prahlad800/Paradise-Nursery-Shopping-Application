@@ -1,0 +1,235 @@
+/* Full screen center */
+.order-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(135deg, #dbeafe, #fbcfe8); */
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Card */
+.order-card {
+  width: 380px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Check circle */
+.check-circle {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Order ID */
+.order-id {
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Details */
+.order-details {
+  text-align: left;
+  margin: 20px 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.status {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.amount {
+  font-weight: 600;
+}
+
+/* Buttons */
+.button-group {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.primary {
+  /* background: linear-gradient(135deg, #60a5fa, #a78bfa); */
+  color: white;
+}
+
+.primary:hover {
+  opacity: 0.9;
+}
+
+.secondary {
+  background: white;
+  border: 1px solid #ccc;
+}
+
+.secondary:hover {
+  background: #f3f4f6;
+}
+
+/* Footer text */
+.thank-you {
+  margin-top: 15px;
+  font-size: 14px;
+  color: gray;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Container Background Animation */
+.order-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Animated Card */
+.order-card {
+  width: 380px;
+  background: white;
+  padding: 30px;
+  border: 1px solid rgb(233, 224, 224);
+  border-radius: 15px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  animation: slideUp 0.6s ease forwards;
+  transform: translateY(40px);
+  opacity: 0;
+}
+
+/* Check Circle Pop Animation */
+.check-circle {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  animation: pop 0.5s ease 0.4s forwards;
+  transform: scale(0);
+}
+
+/* Floating Effect */
+.order-card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
+
+/* Buttons */
+.btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Primary Button Glow */
+.primary {
+  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+  color: white;
+}
+
+.primary:hover {
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.6);
+  transform: translateY(-2px);
+}
+
+/* Secondary Button */
+.secondary {
+  background: white;
+  border: 1px solid #ccc;
+}
+
+.secondary:hover {
+  background: #f3f4f6;
+  transform: translateY(-2px);
+}
+
+/* Animations */
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.link{
+    color: black;
+    text-decoration: none;
+}
+
+/* @keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */

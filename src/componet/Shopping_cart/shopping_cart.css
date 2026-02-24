@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
+}
+
+#main-shopping {
+    display: flex;
+    margin-top: 20px;
+}
+
+#product-list {
+    width: 65%;
+    height: 65vh;
+    overflow: auto;
+    scrollbar-width: none;
+    /* border: 2px solid red;     */
+}
+
+.shopping-card-detail {
+    width: 85%;
+    height: 120px;
+    border-radius: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    margin-top: 5px;
+    margin-left: 30px;
+    box-shadow: 0px 0px 2px #555555cf;
+
+    border: 1px solid rgb(181, 181, 186);
+}
+
+.shopping-card-detail:hover {
+    box-shadow: 0px 0px 5px #555;
+}
+
+.shopping-card-img img {
+    width: 100px;
+    height: 105px;
+    margin: 5px;
+    border-radius: 15px;
+
+}
+
+.shopping-card-name-quant {
+    width: 80%;
+    height: 100px;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+    justify-content: space-between;
+    /* border: 2px solid rgb(51, 255, 0);   */
+
+}
+
+.shopping-card-item-name {
+    font-size: larger;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+.shopping-card-item-description,
+.shopping-card-item-category {
+    color: #555;
+}
+
+.shopping-card-item-finalPrice {
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+    margin-right: 8px;
+}
+
+.shopping-card-item-price {
+    text-decoration: line-through;
+    color: gray;
+    margin-right: 8px;
+}
+
+.shopping-card-item-discount {
+    color: crimson;
+    font-weight: bold;
+}
+
+/* 88888888888888888888888888 */
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.qty-btn {
+    width: 32px;
+    height: 32px;
+    background-color: #2e7d32;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.qty-btn:hover {
+    background-color: #1b5e20;
+    transform: scale(1.1);
+}
+
+.qty-number {
+    font-size: 18px;
+    font-weight: 600;
+    min-width: 20px;
+    text-align: center;
+}
+
+/* ------------------------------------------ */
+#price-section {
+    width: 35%;
+    height: 65vh;
+    box-shadow: 0px 0px 2px #555555cf;
+    /* border: 2px solid red;        */
+}
+
+#price-section {
+    width: 320px;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid rgba(208, 204, 204, 0.91);
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    font-family: Arial, sans-serif;
+}
+
+#price-section h3 {
+    font-size: 14px;
+    color: #878787;
+    font-weight: 600;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #212121;
+}
+
+.discount {
+    color: #388e3c;
+}
+
+.total {
+    border-top: 1px dashed #ddd;
+    padding-top: 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.save-msg {
+    margin-top: 12px;
+    font-size: 13px;
+    color: #388e3c;
+    font-weight: 500;
+}
+
+.checkout-btn {
+    width: 400px;
+    margin-top: 15px;
+    border-radius: 10px;
+    margin-right: 30px;
+    padding: 12px;
+    background: #fb641b;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.checkout-btn:hover {
+    background: #e55b16;
+}
+
+.order-now {
+    width: 100%;
+    /* 
+    border: 2px solid rgb(0, 255, 64); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* ______________________________________________________________ */
+#order-section {
+    margin-top: 10px;
+    width: 90%;
+     margin-right:6% ;
+
+    height: 15vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px #555555cf;
+
+    border: 1px solid rgb(215, 210, 210);
+
+}
+
+#order55 {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+}
+
+.order-now span {
+    margin-left: 10px;
+   
+  font-size: 22px;
+  font-weight: 600;
+  color: #2e7d32; /* nice green money color */
+
+}
+
+

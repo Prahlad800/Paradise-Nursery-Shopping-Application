@@ -1,0 +1,84 @@
+/* Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background */
+body{
+  font-family: 'Segoe UI', sans-serif;
+  background: url("./backgroud_imege_photo.jpg") center/cover no-repeat fixed;
+}
+
+/* Main layout */
+#main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  backdrop-filter: brightness(0.85);
+}
+
+/* Common section style */
+.main_div{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+  color: white;
+}
+
+/* Left side heading */
+#com-name{
+  align-items: center;
+  text-align: center;
+}
+
+#com-name p{
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  line-height: 1.3;
+  text-shadow: 2px 4px 10px rgba(0,0,0,0.6);
+}
+
+/* Premium Yellow Button */
+#com-name button{
+  padding: 14px 35px;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+#com-name button:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(135deg, #ffea00, #ffb700);
+}
+
+#com-name button:active{
+  transform: translateY(1px);
+}
+
+/* Right side paragraph */
+#paira{
+  align-items: flex-start;
+}
+
+#paira p{
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 600px;
+  text-shadow: 1px 2px 6px rgba(0,0,0,0.5);
+}
+
